@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
+=======
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+>>>>>>> 932a388a87bc8c9eaa1289550015e7757d832ced
 }
 
 #conteiner-cadastro{
