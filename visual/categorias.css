@@ -29,3 +29,7 @@
     grid-row: auto auto auto;
     height: 90vh;  
 }
+
+.font {
+    font-family: 'Courier New', Courier, monospace;
+}
