@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.centro-linha {
+    justify-content: center;
+}
+
+.centro-coluna {
+    align-items: center;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-categorias {
+    display: grid;
+    grid-row: auto auto auto;
+    height: 100%;  
+}
+
+#sec-principal {
+    height: 100vh;
+}
