@@ -3,23 +3,23 @@ Esse repositório é um protótipo de um trabalho realizado por alunos da DS24/1
 Para contribuir tenha certeza que:
 
 # HTML
-Use sempre tags semânticas
-Nomes que signifiquem algo concreto em classes e IDs
+- Use sempre tags semânticas 
+- Nomes que signifiquem algo concreto em classes e IDs
 
 # CSS
-#elemento = 1
-.elemento = mais de 1
-tag-html = CUIDADO AO MUDAR ESSE
+- #elemento = 1
+- .elemento = mais de 1
+- tag-html = CUIDADO AO MUDAR ESSE
 
 .elemento ou #elemento ou tag-html {
-display: <aqui>;
-margin: <aqui>;
-padding: <aqui>;
-height: <aqui>;
-width: <aqui>;
-<fontes>
-<cores>
-<etc>
+- display: aqui;
+- margin: aqui;
+- padding: aqui;
+- height: aqui;
+- width: aqui;
+- fontes
+- cores
+- etc
 }
 
 # JS
