@@ -17,6 +17,7 @@ Para contribuir tenha certeza que:
 - padding: aqui;
 - height: aqui;
 - width: aqui;
+- configs display
 - fontes
 - cores
 - etc
