@@ -2,24 +2,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastr-se!</title>
-    <link rel="stylesheet" href="../visual/login.css">
-    <link rel="stylesheet" href="../visual/generico.css">
+    <title>Login</title>
     <script src="../js/login.js"></script>
+    <link rel="stylesheet" href="../visual/generico.css">
+    <link rel="stylesheet" href="../visual/login.css">
 </head>
 <body>
     <main>
-        <section id="conteiner-login">
-            <div class="titulo-login">
-                <h1>Bem Vindo Novamente!</h1>
-            </div>
-            <span id="sign-up-children-warning">Caso precise, chame um adulto para responder!</span>
-            <!--
-            input nome
-            input email
-            button senha
-            -->
-        </section>
+        <div class="form-container">
+            <p class="title">Bem Vindo Novamente!</p>
+            <form action="" class="form">
+                <div class="form-label">
+                    <div class="block">
+                        <label class="label-block" for="email">Email:</label>
+                    </div>
+                    <input type="email" class="input" placeholder="Seu Email" autofocus required>
+                </div>
+                <div class="form-label">
+                    <div class="block">
+                        <label class="label-block" for="password">Senha:</label>
+                    </div>
+                    <input type="password" class="input" placeholder="Sua Senha" required>
+                </div>
+                <p class="page-link">
+                    <span class="page-link-label">Esqueceu sua Senha?</span>
+                </p>
+                <button class="form-btn" onclick="">Entrar</button>
+            </form>
+            <p class="cadastro-label">
+              Não Possui uma Conta?<span class="cadastro-link">Cadastre-se</span>
+            </p>
+        </div>
     </main>
 </body>
 </html>
