@@ -26,6 +26,13 @@
     align-items: center;
 }
 
+.font {
+    font-family: "Outfit", sans-serif;
+    font-size: 180%;
+    font-weight: 600;
+    color: white;
+}
+
 #main {
     display: grid;
     grid-row: auto auto auto;
@@ -34,11 +41,12 @@
 }
 
 #sec-fundamentalI {
-    background-color: cadetblue;
+    background-color: lightseagreen;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: brightness(80%);
 }
 
 #sec-fundamentalII {
@@ -47,6 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: brightness(80%);
 }
 
 #sec-EM {
@@ -55,10 +64,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: brightness(80%);
 }
 
-.font {
-    font-family: "Outfit", sans-serif;
-    font-size: 180%;
-    font-weight: 700;
+#sec-fundamentalI:hover {
+    filter: brightness(100%);
+}
+
+#sec-fundamentalII:hover {
+    filter: brightness(100%);
+}
+
+#sec-EM:hover {
+    filter: brightness(100%);
 }

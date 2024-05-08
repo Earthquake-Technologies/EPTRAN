@@ -11,13 +11,14 @@ main{
 
 #conteiner-cadastro{
     background-color: #FAFAFA;
-    width: 40vh;
+    width: 70%;
+    height: fit-content;
     padding: 3vh;
     border-radius: 40px;
-    margin-bottom: 3vh;
     border-style: solid;
     border-width: 1px;
     border-color: #D9D9D9;
+    box-shadow: 0px 5px 15px rgba(0 , 0 , 0 , 0.137);
 }
 
 #msg-bem-vindo{
@@ -27,23 +28,24 @@ main{
 }
 
 #conteiner-itens{
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
+    height: 100%;
 }
 
 #titulo{
-    font-size: 30px;
+    font-size: 2rem;
     margin-bottom: 5vh;
 }
 
 #alerta-pais {
     color: #f8a322;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .item-cadastro{
     color: #DD8604;
-    margin-top: 5vh;
+    margin-top: 6vh;
 }
 
 
@@ -52,8 +54,9 @@ main{
     border-style: solid;
     border-width: 1px;
     width: 100%;
-    height: 4vh;
     padding: 1vh;
+    height: 30px;
+    font-size: 1rem;
 }
 
 .display-block {
@@ -61,7 +64,7 @@ main{
 }
 
 .label-item{
-    position: fixed;
+    position: absolute;
     margin-top: -13px;
     background-color: #FAFAFA  ;
     margin-left: 1vh;
@@ -79,13 +82,12 @@ main{
 
 #proximo{
     height: 8vh;
-    font-size: 23px;
+    font-size: 20px;
     border-color: #ebc52e;
     border-style: solid;
     font-weight: 700;
-    width: 20vh;
+    width: fit-content;
     border-radius: 7px;
     border-width: 4px;
     background-color: #e7b160;
-
 }
