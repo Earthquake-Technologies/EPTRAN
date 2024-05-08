@@ -21,7 +21,7 @@ main {
     100% {transform: scale(0.85);}
   }
 
-#logotipo-loading {
+#logotipo-carregamento {
     height: 353.2px;
     width: 250px;
     animation-name: pulse;

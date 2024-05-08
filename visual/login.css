@@ -3,3 +3,20 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-login {
+    width: 359px;
+    height: 690px;
+    flex-shrink: 0;
+}
+
+.titulo-login {
+    
+}
