@@ -1,25 +1,91 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #e7f3fa;
 }
 
 #conteiner-cadastro{
     background-color: #FAFAFA;
     width: 40vh;
+    padding: 3vh;
+    border-radius: 40px;
+    margin-bottom: 3vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D9D9D9;
 }
 
-.login-form-item{
-    margin-top: 10%;
-    margin-bottom: 10%;
+#msg-bem-vindo{
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
 }
 
-#password-not-match {
-    display: none;
+#conteiner-itens{
+    margin-bottom: 2vh;
+}
+
+#titulo{
+    font-size: 30px;
+    margin-bottom: 5vh;
+}
+
+#alerta-pais {
+    color: #f8a322;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.item-cadastro{
+    color: #DD8604;
+    margin-top: 5vh;
+}
+
+
+.input-item{
+    border-color: #FAD200;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    height: 4vh;
+    padding: 1vh;
 }
 
 .display-block {
     display: block;
+}
+
+.label-item{
+    position: fixed;
+    margin-top: -13px;
+    background-color: #FAFAFA  ;
+    margin-left: 1vh;
+}
+
+#senha-nao-bate {
+    display: none;
+}
+
+#div-botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#proximo{
+    height: 8vh;
+    font-size: 23px;
+    border-color: #ebc52e;
+    border-style: solid;
+    font-weight: 700;
+    width: 20vh;
+    border-radius: 7px;
+    border-width: 4px;
+    background-color: #e7b160;
+
 }
