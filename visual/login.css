@@ -15,11 +15,11 @@ main {
 /* Fomulário de Login */
 .form-container {
     width: 90vw;
-    height: 550px;
+    height: 570px;
     padding: 20px 30px;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.137) 0px 5px 15px;
-    border-radius: 10px;
+    border-radius: 30px;
     box-sizing: border-box;
   }
   
