@@ -1,0 +1,84 @@
+/* TODO Adequar ao PADRÂO */
+
+#central {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 34px;
+flex-shrink: 0; 
+}
+
+#pesquisar-topo {
+display: flex;
+padding: 12px 15px 0px 15px;
+height: 75px;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0; 
+}
+
+#prefeitura-horizontal {
+    width: 150px;
+    height: 55px;
+    flex-shrink: 0; 
+}
+
+#titulo-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; 
+}
+
+#bem-vindo-menu {
+    color: #000;
+    text-align: center;
+    font-family: "Roboto Serif";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+#eptran-span {
+    color: #ABABAB;
+    text-align: center;
+    font-family: "Roboto Serif";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+.caixas-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+}
+
+.caixa-menu {
+    display: flex;
+    width: 205px;
+    height: 205px;
+    padding: 55px 49px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    flex-shrink: 0;  
+    border-radius: 3px;
+    background: #D9D9D9; 
+}
+
+.texto-caixa {
+    color: #000;
+    text-align: center;
+    font-family: "Roboto Serif";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;   
+}
