@@ -9,7 +9,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(253, 245, 236);
+    background-color: rgb(69, 182, 248);
+}
+
+/* links */
+a {
+    color: #ffbb00;
+    text-decoration: none;
 }
 
 /* Fomulário de Login */
