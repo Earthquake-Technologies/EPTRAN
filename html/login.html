@@ -9,30 +9,49 @@
 </head>
 <body>
     <main>
-        <div class="form-container">
-            <p class="title">Bem Vindo Novamente!</p>
-            <form action="" class="form">
-                <div class="form-label">
-                    <div class="block">
-                        <label class="label-block" for="email">Email:</label>
-                    </div>
-                    <input type="email" class="input" placeholder="Seu Email" id="input-nome" autofocus required>
+        <section id="outros">
+            <div id="olho">
+                <p>+</p>
+            </div>
+            <div id="interrogação">
+                <p>?</p>
+            </div>
+        </section>
+
+
+        <section id="intro">
+            <div id="img">
+                <img src="../imagens/placeholder.png" alt="">
+            </div>
+            <div id="bem-vindo">
+                <h1>Seja Bem-Vindo Novamente!</h1>
+            </div>
+        </section>
+
+        
+        <section id="sec-form">
+            <form action="" id="form">
+                <div class="item-form">
+                    <label for="Identificador" class="label-form">Nome ou Email: </label><br>
+                    <input type="text" name="Identificador" id="Identificador" placeholder="Nome de Usuário ou Email@" class="input-form"><br>
                 </div>
-                <div class="form-label">
-                    <div class="block">
-                        <label class="label-block" for="password">Senha:</label>
-                    </div>
-                    <input type="password" class="input" placeholder="Sua Senha" id="input-senha" required>
+                <div class="item-form">
+                    <label for="senha" class="label-form">Senha: </label><br>
+                    <input type="password" name="senha" id="senha" placeholder="Senha" class="input-form">
                 </div>
-                <p class="page-link">
-                    <span class="page-link-label">Esqueceu sua Senha?</span>
-                </p>
-                <button class="form-btn" onclick="entrar()">Entrar</button>
             </form>
-            <p class="cadastro-label">
-              Não Possui uma Conta? <a class="cadastro-link" href="./cadastro.html">Cadastre-se</a>
-            </p>
-        </div>
+        </section>
+
+
+        <section id="links">
+            <a href="" id="esqueci">Esqueci a Senha</a>
+            <p>Novo por aqui?<a href="">Crie sua conta!</a></p>
+        </section>
+
+
+        <section id="div-botao">
+            <a href=""><button id="botao">Em frente!</button></a>
+        </section>
     </main>
 </body>
 </html>
