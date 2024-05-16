@@ -1,93 +1,47 @@
-*{
+* {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-main{
+/* HEADER */
+.conteudos {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e7f3fa;
+    padding: 2%;
 }
 
-#conteiner-cadastro{
-    background-color: #FAFAFA;
-    width: 70%;
-    height: fit-content;
-    padding: 3vh;
-    border-radius: 40px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #D9D9D9;
-    box-shadow: 0px 5px 15px rgba(0 , 0 , 0 , 0.137);
-}
-
-#msg-bem-vindo{
+.interrogacao {
+    color: #0068C8;
     text-align: center;
-    margin-top: 1vh;
-    margin-bottom: 2vh;
-}
-
-#conteiner-itens{
-    margin-bottom: 3vh;
-    height: 100%;
-}
-
-#titulo{
-    font-size: 2rem;
-    margin-bottom: 5vh;
-}
-
-#alerta-pais {
-    color: #f8a322;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.item-cadastro{
-    color: #DD8604;
-    margin-top: 6vh;
-}
-
-
-.input-item{
-    border-color: #FAD200;
-    border-style: solid;
-    border-width: 1px;
-    width: 100%;
-    padding: 1vh;
-    height: 30px;
-    font-size: 1rem;
-}
-
-.display-block {
-    display: block;
-}
-
-.label-item{
-    position: absolute;
-    margin-top: -13px;
-    background-color: #FAFAFA  ;
-    margin-left: 1vh;
-}
-
-#senha-nao-bate {
-    display: none;
-}
-
-#div-botao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#proximo{
-    height: 8vh;
-    font-size: 20px;
-    border-color: #ebc52e;
-    border-style: solid;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.60);
+    font-family: "Roboto Serif";
+    font-size: 40px;
+    font-style: normal;
     font-weight: 700;
-    width: fit-content;
-    border-radius: 7px;
-    border-width: 4px;
-    background-color: #e7b160;
+    line-height: normal;
+}
+
+/* MAIN */
+.container-main {
+    width: 498px;
+    height: 959px;
+    flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+
+/* Botão em Frente */
+.btn-em-frente {
+    width: 393px;
+    height: 76px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 4px solid #FFF;
+    background: rgba(17, 134, 241, 0.70);
 }
