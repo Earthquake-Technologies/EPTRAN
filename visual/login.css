@@ -4,63 +4,64 @@
     box-sizing: border-box;
     font-family: "Roboto Serif";
 }
-a{
+
+
+a {
     color: #0068C8;
 }
 
 main {
-    height: 100vh;
+    height: 70vh;
+    margin: 0% 6% 6% 6%;
     background-color: #fafafa;
 }
-#outros{
+
+#outros {
     display: flex;
     justify-content: space-between;
     margin: 15px;
 }
 
-img{
+img {
     width: 30vh;
 }
 
-#intro{
+#intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
+    margin: 0% 0% 5% 0%;
     text-align: center;
-    font-size: 19px;
+    font-size: 20px;
 }
 
-.item-form{
-    margin-top: 40px;
-}
 
-#sec-form{
-    margin: 10px;
-}
-
-.input-form{
+.input-form {
+    display: flex;
+    justify-content: center;
     height: 5vh;
-    width: 54vh;
-    padding: 10px;
+    width: 100%;
+    padding: 25px;
     background-color: #e3e3e3;
     border-color: #C2C2C2;
     border-style: solid;
     border-radius: 10px;
     margin-top: 10px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(141, 133, 133, 0.25));
 }
 
-#div-botao{
+#div-botao {
     display: flex;
     justify-content: center;
+    align-items: end;
     align-items: center;
 }
 
-#botao{
-    width: 40vh;
-    height: 7vh;
+#botao {
+    width: 90vw;
+    height: 9vh;
     background-color: #59ABF6;
     border-color: #fafafa;
     margin-top: 30px;
@@ -72,14 +73,42 @@ img{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-#links{
-    height: 10vh;
+#links {
+    height: 8vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#esqueci{
+#esqueci {
     text-align: end;
     margin-right: 3vh;
+}
+
+/* Responsividade para telas com no minimo 830px e no maximo XXXpx*/
+@media screen and (min-height: 830px) {
+    main {
+        margin: 21%;
+    }
+
+    #div-botao {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        align-items: center;
+    }
+    
+    #botao {
+        width: 70vw;
+        height: 9vh;
+        background-color: #59ABF6;
+        border-color: #fafafa;
+        margin-top: 30px;
+        font-size: 20px;
+        border-radius: 7px;
+        color: #fafafa;
+        border: 3px solid #FFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
 }
