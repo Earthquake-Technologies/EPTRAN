@@ -5,13 +5,18 @@
     font-family: "Roboto Serif";
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
 
 a {
     color: #0068C8;
 }
 
 main {
-    height: 70vh;
     margin: 0% 6% 6% 6%;
     background-color: #fafafa;
 }
@@ -23,7 +28,7 @@ main {
 }
 
 img {
-    width: 30vh;
+    width: 200px;
 }
 
 #intro {
@@ -52,17 +57,19 @@ img {
     filter: drop-shadow(0px 4px 4px rgba(141, 133, 133, 0.25));
 }
 
+.item-form {
+    margin: 20px 0px 0px 0px;
+}
+
 #div-botao {
     display: flex;
     justify-content: center;
-    align-items: end;
-    align-items: center;
 }
 
 #botao {
     width: 90vw;
     height: 9vh;
-    background-color: #59ABF6;
+    background-color: #256fb4;
     border-color: #fafafa;
     margin-top: 30px;
     font-size: 20px;
@@ -71,6 +78,11 @@ img {
     border: 3px solid #FFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#botao:hover {
+    background-color: #083d6e;
+    transition: 0.25s;
 }
 
 #links {
@@ -86,29 +98,12 @@ img {
 }
 
 /* Responsividade para telas com no minimo 830px e no maximo XXXpx*/
-@media screen and (min-height: 830px) {
-    main {
-        margin: 21%;
+@media screen and (min-height: 805px) and (max-width: 830px) {
+    body {
+        height: 90vh;
     }
 
-    #div-botao {
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        align-items: center;
-    }
-    
-    #botao {
-        width: 70vw;
-        height: 9vh;
-        background-color: #59ABF6;
-        border-color: #fafafa;
-        margin-top: 30px;
-        font-size: 20px;
-        border-radius: 7px;
-        color: #fafafa;
-        border: 3px solid #FFF;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    main {
+        margin: 2%;
     }
 }
