@@ -12,7 +12,6 @@ function entrar() {
     const senhaUsuario = document.getElementById('input-senha').value;
 
     for (let i = 0; i < users.length; i++) {
-        console.log(users[i].nome, users[i].senha)
         if (nomeUsuario === users[i].nome && senhaUsuario === users[i].senha) {
             // Redireciona para a página de menu se o usuário e senha estiverem corretos
             return window.location.href = 'aprender.html';
@@ -22,5 +21,10 @@ function entrar() {
     // Se não houver correspondência de usuário e senha, pode exibir uma mensagem de erro ou apenas retornar sem fazer nada
     // irei subtituir este alert
     alert("Usuário ou senha incorretos.");
+}
+
+
+function mais() {
+    alert("Clicou no Mais");
 }
 
