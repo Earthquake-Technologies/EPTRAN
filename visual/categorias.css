@@ -37,8 +37,7 @@
 #main {
     display: grid;
     grid-row: auto auto auto;
-    grid-template-columns: 100vw;
-    height: 90vh;  
+    grid-template-columns: 100vw; 
 }
 
 #sec-fundamentalI {
