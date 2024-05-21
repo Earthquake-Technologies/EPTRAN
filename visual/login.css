@@ -26,6 +26,12 @@ main {
     overflow: hidden;
 }
 
+#olho, #interrogacao {
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 #bem-vindo {
     font-size: 2rem;
 }
