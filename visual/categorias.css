@@ -38,6 +38,7 @@
     display: grid;
     grid-row: auto auto auto;
     grid-template-columns: 100vw; 
+    height: 90vh;
 }
 
 #sec-fundamentalI {
