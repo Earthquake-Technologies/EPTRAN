@@ -23,8 +23,8 @@
             <div id="img">
                 <img src="../imagens/placeholder.png" alt="">
             </div>
-            <div id="bem-vindo">
-                <h1>Login</h1>
+            <div>
+                <h1 id="bem-vindo">Login</h1>
             </div>
         </section>
 
@@ -33,11 +33,11 @@
             <form action="" id="form">
                 <div class="item-form">
                     <label for="Identificador" class="label-form">Nome ou Email: </label><br>
-                    <input type="text" name="Identificador" id="Identificador" placeholder="Nome de Usuário ou Email@gmail" class="input-form"><br>
+                    <input type="text" name="Identificador" id="input-nome" placeholder="Nome de Usuário ou Email@gmail" class="input-form"><br>
                 </div>
                 <div class="item-form">
                     <label for="senha" class="label-form">Senha: </label><br>
-                    <input type="password" name="senha" id="senha" placeholder="Senha" class="input-form">
+                    <input type="password" name="senha" id="input-senha" placeholder="Senha" class="input-form">
                 </div>
             </form>
         </section>
@@ -50,7 +50,7 @@
 
 
         <section id="div-botao">
-            <a href="./aprender.html"><button id="botao">Em frente!</button></a>
+            <button id="botao" onclick="entrar()">Em frente!</button>
         </section>
     </main>
 </body>

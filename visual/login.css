@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -26,7 +27,7 @@ main {
 }
 
 #bem-vindo {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 #outros {
@@ -37,6 +38,7 @@ main {
 
 img {
     width: 200px;
+    border-radius: 10px;
 }
 
 #intro {
@@ -50,6 +52,9 @@ img {
     font-size: 20px;
 }
 
+label {
+    font-weight: 500;
+}
 
 .input-form {
     display: flex;
@@ -106,9 +111,13 @@ img {
     margin-right: 3vh;
 }
 
-/* Responsividade para telas com no minimo 830px e no maximo XXXpx*/
+/* Responsividade para telas com no maximo 810px */
 @media screen and (max-height: 810px) {
     img {
         width: 150px;
+    }
+
+    #bem-vindo {
+        font-size: 1.7rem;
     }
 }

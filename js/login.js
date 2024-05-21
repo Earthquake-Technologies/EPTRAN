@@ -15,7 +15,7 @@ function entrar() {
         console.log(users[i].nome, users[i].senha)
         if (nomeUsuario === users[i].nome && senhaUsuario === users[i].senha) {
             // Redireciona para a página de menu se o usuário e senha estiverem corretos
-            return window.location.href = 'menu.html';
+            return window.location.href = 'aprender.html';
         }
     }
     
