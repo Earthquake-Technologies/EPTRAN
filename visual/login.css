@@ -8,7 +8,7 @@
 
 /* Modo Escuro */
 body.dark-mode {
-    background-image: url('../imagens/background-escuro.jpg'); /* Use uma imagem de fundo apropriada para o modo escuro */
+    background-image: url('../imagens/background-azul-pref-modo-escuro.jpg'); /* Use uma imagem de fundo apropriada para o modo escuro */
     background-color: #121212; /* Cor de fundo para o modo escuro */
 }
 
@@ -32,10 +32,20 @@ body.dark-mode #botao:hover {
 
 body.dark-mode .input-form {
     background-color: #555555;
-    border-color: #888888;
-    color: #ffffff;
+    border-color: #d3c3c3;
+    color: #f3ebeb;
 }
 
+body.dark-mode .input-form {
+    background-color: #555555;
+    border-color: #d3c3c3;
+    color: #f3ebeb;
+}
+
+body.dark-mode  #olho-mode {
+    width: 28px;
+    color: white;
+}
 
 body {
     display: flex;
@@ -68,6 +78,11 @@ main {
 
 #interrogacao:hover {
     transform: scale(1.05);
+}
+
+#olho-mode {
+    fill: black;
+    width: 28px;
 }
 
 #interrogacao:hover #informacao-interrogacao {
