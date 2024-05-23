@@ -25,6 +25,7 @@ function entrar() {
 
 
 function mais() {
-    alert("Clicou no Mais");
+    document.body.classList.toggle('dark-mode');
 }
+
 

@@ -6,6 +6,37 @@
     font-family: "Roboto Serif";
 }
 
+/* Modo Escuro */
+body.dark-mode {
+    background-image: url('../imagens/background-escuro.jpg'); /* Use uma imagem de fundo apropriada para o modo escuro */
+    background-color: #121212; /* Cor de fundo para o modo escuro */
+}
+
+body.dark-mode main {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #80b3ff;
+}
+
+body.dark-mode #botao {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+body.dark-mode #botao:hover {
+    background-color: #222222;
+}
+
+body.dark-mode .input-form {
+    background-color: #555555;
+    border-color: #888888;
+    color: #ffffff;
+}
+
+
 body {
     display: flex;
     justify-content: center;
