@@ -10,8 +10,8 @@
 html
 {
   position:fixed;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* Modo Escuro */
@@ -216,7 +216,7 @@ label {
 }
 
 /* Responsividade para telas com no maximo 810px */
-@media screen and (max-height: 810px) {
+@media(max-height: 810px) {
     img {
         width: 150px;
     }
