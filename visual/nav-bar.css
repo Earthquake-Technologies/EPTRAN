@@ -13,14 +13,6 @@ main {
 }
 /* Footer */
 
-.footer {
-    display: flex;
-    justify-content: center;
-    height: 10vh;
-    background: #AB77FF;
-    position: fixed;
-}
-
 .nav-list {
     display: flex;
     align-items: center;
@@ -45,8 +37,6 @@ main {
     transition: 0.4s;
 }
 
-
-/*  */
 .footer {
     display: flex;
     justify-content: center;
