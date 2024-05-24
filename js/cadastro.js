@@ -13,6 +13,10 @@ function passarCadastro() {
 
 */
 
+new paginas = ['cadastroUm.html', 'cadastroDois.html', 'cadastroTres.html', 'cadastroQuatro.html', 'cadastroCinco.html']
+
+
+
 function passarPagina() {
-    console.log(window.location.href);
+
 }
