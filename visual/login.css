@@ -6,12 +6,64 @@
     font-family: "Roboto Serif";
 }
 
+/* Desabilitando a rolagem da tela */
+html
+{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    background-image: url('../imagens/background-azul-pref-modo-escuro.jpg'); /* Use uma imagem de fundo apropriada para o modo escuro */
+    background-color: #121212; /* Cor de fundo para o modo escuro */
+}
+
+body.dark-mode main {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #80b3ff;
+}
+
+body.dark-mode #botao {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+body.dark-mode #botao:hover {
+    background-color: #222222;
+}
+
+body.dark-mode .input-form {
+    background-color: #555555;
+    border-color: #d3c3c3;
+    color: #f3ebeb;
+}
+
+body.dark-mode .input-form {
+    background-color: #555555;
+    border-color: #d3c3c3;
+    color: #f3ebeb;
+}
+
+body.dark-mode  #olho-mode {
+    width: 28px;
+    color: white;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('../imagens/background-azul-pref.jpg')
+    background-image: url('../imagens/background-azul-pref.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 a {
@@ -30,6 +82,52 @@ main {
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
+}
+
+#interrogacao:hover {
+    transform: scale(1.05);
+}
+
+#olho-mode {
+    fill: black;
+    width: 28px;
+}
+
+#interrogacao:hover #informacao-interrogacao {
+    visibility: visible;
+    opacity: 1;
+}
+
+#informacao-interrogacao {
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 500%;
+    margin-left: -80px;
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s;
+    border-radius: 8px;
+}
+
+#informacao-interrogacao::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+#info-fonte {
+    font-size: 10px;
 }
 
 #bem-vindo {
@@ -118,7 +216,7 @@ label {
 }
 
 /* Responsividade para telas com no maximo 810px */
-@media screen and (max-height: 810px) {
+@media(max-height: 810px) {
     img {
         width: 150px;
     }

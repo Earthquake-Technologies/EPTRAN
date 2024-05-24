@@ -12,10 +12,9 @@ function entrar() {
     const senhaUsuario = document.getElementById('input-senha').value;
 
     for (let i = 0; i < users.length; i++) {
-        console.log(users[i].nome, users[i].senha)
         if (nomeUsuario === users[i].nome && senhaUsuario === users[i].senha) {
             // Redireciona para a página de menu se o usuário e senha estiverem corretos
-            return window.location.href = 'aprender.html';
+            return window.location.href = 'menu.html';
         }
     }
     
@@ -23,4 +22,15 @@ function entrar() {
     // irei subtituir este alert
     alert("Usuário ou senha incorretos.");
 }
+
+
+function mais() {
+    document.body.classList.toggle('dark-mode');
+    const olhoModeElement = document.getElementById('olho-mode');
+    const isDarkMode = document.body.classList.contains('dark-mode');
+
+    olhoModeElement.style.fill = isDarkMode ? '#fff' : 'black';
+
+}
+
 

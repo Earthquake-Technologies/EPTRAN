@@ -1,3 +1,10 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Serif";
+}
+
 #aprender-header {
     display: flex;
     margin-top: 10%;
@@ -18,7 +25,7 @@
 
 #barra-de-pesquisa {
     display: flex;
-    padding-right: 3%;
+    padding-right: 10px;
     flex-direction: row-reverse;
     align-items: center;
     width: 302px;

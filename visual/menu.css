@@ -1,5 +1,16 @@
 /* TODO Adequar ao PADRÂO */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Serif";
+}
+
+header {
+    margin: 0px 0px 20px 0px;
+    box-shadow: 0px 0px 7px 0px rgba(180, 178, 178, 0.712);
+}
 
 #central {
 display: flex;
@@ -60,7 +71,7 @@ flex-shrink: 0;
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 15px;
 }
 
 .caixa-menu {
@@ -74,6 +85,13 @@ flex-shrink: 0;
     flex-shrink: 0;  
     border-radius: 3px;
     background: #D9D9D9; 
+    box-shadow: 0px 1px 5px 0px rgb(131, 128, 128);
+    cursor: pointer;
+}
+
+.caixa-menu:hover {
+    background-color: #a3a0a08a;
+    transition: 0.15s;
 }
 
 .texto-caixa {
@@ -85,4 +103,18 @@ flex-shrink: 0;
     font-style: normal;
     font-weight: 500;
     line-height: normal;   
+}
+
+@media(max-width: 370px) {
+    .caixa-menu {
+        width: 155px;
+        height: 155px;
+    }
+}
+
+@media(max-width: 340px) {
+    .caixa-menu {
+        width: 135px;
+        height: 135px;
+    }
 }
