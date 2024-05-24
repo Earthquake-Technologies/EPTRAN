@@ -6,6 +6,14 @@
     font-family: "Roboto Serif";
 }
 
+/* Desabilitando a rolagem da tela */
+html
+{
+  position:fixed;
+  width:100%;
+  height:100%;
+}
+
 /* Modo Escuro */
 body.dark-mode {
     background-image: url('../imagens/background-azul-pref-modo-escuro.jpg'); /* Use uma imagem de fundo apropriada para o modo escuro */
