@@ -14,7 +14,7 @@ function entrar() {
     for (let i = 0; i < users.length; i++) {
         if (nomeUsuario === users[i].nome && senhaUsuario === users[i].senha) {
             // Redireciona para a página de menu se o usuário e senha estiverem corretos
-            return window.location.href = 'aprender.html';
+            return window.location.href = 'menu.html';
         }
     }
     
