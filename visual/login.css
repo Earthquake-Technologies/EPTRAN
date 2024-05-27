@@ -16,7 +16,7 @@ html
 
 /* Modo Escuro */
 body.dark-mode {
-    background-image: url('../imagens/background-azul-pref-modo-escuro.jpg'); /* Use uma imagem de fundo apropriada para o modo escuro */
+    background-image: url('../imagens/background-pref-escuro.jpg'); /* Use uma imagem de fundo apropriada para o modo escuro */
     background-color: #121212; /* Cor de fundo para o modo escuro */
 }
 
