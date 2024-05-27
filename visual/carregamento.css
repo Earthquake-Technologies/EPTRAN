@@ -1,3 +1,4 @@
+/* Configuração para zerar a página */
 * {
     margin: 0px;
     padding: 0px;
@@ -5,9 +6,9 @@
 }
 
 main {
+    display: flex;
     height: 100vh;
     width: 100vw;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #EBEBEB;
