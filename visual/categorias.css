@@ -1,9 +1,12 @@
+<<<<<<< HEAD
+
+=======
 /* Configuração para zerar a página */
+>>>>>>> 49f40136a071beb48b551f8dfa13b3404947dc64
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-   
 }
 
 .flex {
