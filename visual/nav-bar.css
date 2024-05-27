@@ -16,17 +16,17 @@ main {
 
 .nav-list {
     display: flex;
+    margin: 0% 0% 0% 0%;
     align-items: center;
     list-style: none;
-    margin: 0% 0% 0% 0%;
 }
 
 .item {  
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     height: 10vh;
     width: 25vw;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
     font-weight: 600;
     font-size: 0.8rem;
@@ -40,24 +40,24 @@ main {
 
 .footer {
     display: flex;
+    height: 10vh;
     justify-content: center;
     background: #AB77FF;;
-    height: 10vh;
 }
 
 .nav-list {
     display: flex;
+    margin: 0% 0% 0% 0%;
     align-items: center;
     list-style: none;
-    margin: 0% 0% 0% 0%;
 }
 
 .item {  
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     height: 10vh;
     width: 25vw;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
     font-weight: 600;
     font-size: 0.8rem;
