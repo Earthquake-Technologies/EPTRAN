@@ -14,9 +14,15 @@ function passarCadastro() {
 */
 
 
-let permissao = false;
+// TO DO:  imprementar BD
 
-function checarPermissoes() {
+function checarPermissaoTelaUm(){  //funcao para identificar valores HTML e garantir que estão preenchidos
+    var nome = document.getElementById("input-nome").textContent;
+    var idade = document.getElementById("input-idade").textContent;
+}
+
+
+function checarPermissoes() { // função para identificar tela para armazenar dados
     switch (document.URL){
         case document.URL.includes("cadastroUm.html"):
             checarPermissaoTelaUm();
@@ -33,10 +39,10 @@ function checarPermissoes() {
         case document.URL.includes("cadastroCinco.html"):
             checarPermissaoTelaCinco();
             break;
-    }
+    } 
 }
 
-function passarPagina() { //função para passar de página
+function passarPagina() { //função para passar de página 
     if  (checarPermissoes()){  
         switch (document.URL){
             case document.URL.includes("cadastroUm.html"):
