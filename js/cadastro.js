@@ -19,26 +19,33 @@ function passarCadastro() {
 function checarPermissaoTelaUm(){  //funcao para identificar valores HTML e garantir que estão preenchidos
     var nome = document.getElementById("input-nome").textContent;
     var idade = document.getElementById("input-idade").textContent;
+    if (idade < 0 || idade > 120) {
+        return false;
+    }
+    if (nome.length() <= 0) {
+        return false;
+    }
+    return true;
 }
+
+function checarPermissaoTelaDois(){ console.log("TODO")};
+function checarPermissaoTelaTres(){ console.log("TODO")};
+function checarPermissaoTelaQuatro(){ console.log("TODO")};
+function checarPermissaoTelaCinco(){ console.log("TODO")};
 
 
 function checarPermissoes() { // função para identificar tela para armazenar dados
     switch (document.URL){
         case document.URL.includes("cadastroUm.html"):
-            checarPermissaoTelaUm();
-            break;
+            return checarPermissaoTelaUm();
         case document.URL.includes("cadastroDois.html"):
-            checarPermissaoTelaDois();
-            break;
+            return checarPermissaoTelaDois();
         case document.URL.includes("cadastroTres.html"):
-            checarPermissaoTelaTres();
-            break;
+            return checarPermissaoTelaTres();
         case document.URL.includes("cadastroQuatro.html"):
-            checarPermissaoTelaQuatro();
-            break;
+            return checarPermissaoTelaQuatro();
         case document.URL.includes("cadastroCinco.html"):
-            checarPermissaoTelaCinco();
-            break;
+            return checarPermissaoTelaCinco();
     } 
 }
 

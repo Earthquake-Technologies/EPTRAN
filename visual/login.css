@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* Configuração para zerar a página */
 * {
     margin: 0px;
     padding: 0px;
@@ -18,6 +19,16 @@ html
 body.dark-mode {
     background-image: url('../imagens/background-pref-escuro.jpg'); /* Use uma imagem de fundo apropriada para o modo escuro */
     background-color: #121212; /* Cor de fundo para o modo escuro */
+}
+
+/* Muda a cor do placeholder */
+body.dark-mode ::placeholder {
+    color: #eff1f3;
+}
+
+/* Muda a cor do placeholder */
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #eff1f3;;
 }
 
 body.dark-mode main {
@@ -213,6 +224,17 @@ label {
 #esqueci {
     text-align: end;
     margin-right: 3vh;
+}
+
+/* Muda a cor do placeholder */
+::placeholder {
+    color: rgb(34, 33, 33);
+    opacity: 1; /* Firefox */
+}
+
+/* Muda a cor do placeholder */
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: rgb(34, 33, 33);
 }
 
 /* Responsividade para telas com no maximo 810px */
