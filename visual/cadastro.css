@@ -10,14 +10,13 @@ header {
 
 .conteudos {
     display: flex;
+    padding: 2%;
     align-items: center;
     justify-content: space-between;
-    padding: 2%;
     cursor: pointer;
 }
 
 .interrogacao {
-    color: #0068C8;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "Roboto Serif";
@@ -25,23 +24,16 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    color: #0068C8;
 }
 
 /* MAIN */
 .container-main {
-    background-color: #f9f9fa;
     width: 100vw;
     height: 90vh;
     flex-shrink: 0;
+    background-color: #f9f9fa;
 }
-
-
-
-
-
-
-
-
 
 /* Botão em Frente */
 .btn {
@@ -51,16 +43,16 @@ header {
 
 .btn-em-frente {
     display: flex;
+    height: 10vh;
+    width: 90%;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 10vh;
     flex-shrink: 0;
-    border-radius: 10px;
-    border: 4px solid #FFF;
-    background: rgba(17, 134, 241, 0.70);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    color: #f9f9fa;
     font-weight: 700;
     font-size: 1.4rem;
+    color: #f9f9fa;
+    background: rgba(17, 134, 241, 0.70);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    border: 4px solid #FFF;
 }
