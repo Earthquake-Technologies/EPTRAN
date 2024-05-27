@@ -21,6 +21,16 @@ body.dark-mode {
     background-color: #121212; /* Cor de fundo para o modo escuro */
 }
 
+/* Muda a cor do placeholder */
+body.dark-mode ::placeholder {
+    color: #eff1f3;
+}
+
+/* Muda a cor do placeholder */
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #eff1f3;;
+}
+
 body.dark-mode main {
     background-color: #333333;
     color: #ffffff;
@@ -214,6 +224,17 @@ label {
 #esqueci {
     text-align: end;
     margin-right: 3vh;
+}
+
+/* Muda a cor do placeholder */
+::placeholder {
+    color: rgb(34, 33, 33);
+    opacity: 1; /* Firefox */
+}
+
+/* Muda a cor do placeholder */
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: rgb(34, 33, 33);
 }
 
 /* Responsividade para telas com no maximo 810px */
