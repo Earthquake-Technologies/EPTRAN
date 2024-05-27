@@ -43,7 +43,7 @@ body.dark-mode a {
 body.dark-mode #botao {
     background-color: #444444;
     color: #ffffff;
-    background-image: url('../imagens/imagem-pref-escuro.png');
+    background-image: url('../imagens/cinza.png');
 }
 
 body.dark-mode #botao:hover {
