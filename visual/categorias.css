@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-=======
-/* Configuração para zerar a página */
->>>>>>> 49f40136a071beb48b551f8dfa13b3404947dc64
 * {
     margin: 0px;
     padding: 0px;
@@ -70,6 +65,12 @@
     justify-content: center;
     background-color: goldenrod;
     filter: brightness(80%);
+}
+
+.layout-secoes {
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 #sec-fundamentalI:hover {
