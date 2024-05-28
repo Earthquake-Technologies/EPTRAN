@@ -7,18 +7,18 @@
     font-family: "Roboto Serif";
 }
 
-/* Desabilitando a rolagem da tela */
-html
-{
-    width: 100vw;
-    height: 100vh;
+html {
+    height: 120%;
+    width: 100%;
     position: fixed;
+    overflow: hidden;
 }
 
 /* Modo Escuro */
 body.dark-mode {
     background-image: url('../imagens/background-pref-escuro.jpg'); /* Use uma imagem de fundo apropriada para o modo escuro */
     background-color: #121212; /* Cor de fundo para o modo escuro */
+    height: 100vh;
 }
 
 /* Muda a cor do placeholder */
@@ -69,9 +69,9 @@ body.dark-mode  #olho-mode {
 
 body {
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     background-image: url('../imagens/background-azul-pref.jpg');
     background-repeat: no-repeat;
     background-size: cover;
