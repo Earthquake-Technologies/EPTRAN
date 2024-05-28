@@ -41,36 +41,23 @@
 }
 
 #sec-fundamentalI {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
     background-color: lightseagreen;
-    filter: brightness(80%);
 }
 
 #sec-fundamentalII {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
     background-color: hotpink;
-    filter: brightness(80%);
 }
 
 #sec-EM {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
     background-color: goldenrod;
-    filter: brightness(80%);
 }
 
 .layout-secoes {
     display: flex;
     height: 100%;
     align-items: center;
+    justify-content: center;
+    filter: brightness(80%);
 }
 
 #sec-fundamentalI:hover {
