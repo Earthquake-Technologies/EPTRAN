@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+</html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="../js/login.js"></script>
+    <link rel="stylesheet" href="../visual/cadastro.css">
+</head>
+<body>
+    <main>
+        <section id="outros">
+            <div>
+                <div id="olho">
+                    <svg id="olho-mode" onclick="mais()" xmlns="http://www.w3.org/2000/svg" width="47" height="32" viewBox="0 0 47 32" fill="none">
+                        <path d="M23.6763 0C8.8125 0 0 16 0 16C0 16 8.8125 32 23.6763 32C38.1875 32 47 16 47 16C47 16 38.1875 0 23.6763 0ZM23.5 5.33333C30.0212 5.33333 35.25 10.1333 35.25 16C35.25 21.92 30.0212 26.6667 23.5 26.6667C17.0375 26.6667 11.75 21.92 11.75 16C11.75 10.1333 17.0375 5.33333 23.5 5.33333ZM23.5 10.6667C20.2687 10.6667 17.625 13.0667 17.625 16C17.625 18.9333 20.2687 21.3333 23.5 21.3333C26.7313 21.3333 29.375 18.9333 29.375 16C29.375 15.4667 29.14 14.9867 29.0225 14.5067C28.5525 15.36 27.6125 16 26.4375 16C24.7925 16 23.5 14.8267 23.5 13.3333C23.5 12.2667 24.205 11.4133 25.145 10.9867C24.6163 10.8267 24.0875 10.6667 23.5 10.6667Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div id="interrogacao">
+                <p>?</p>
+                <div id="informacao-interrogacao">
+                    <div id="info-fonte">Info.</div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="intro">
+            <div id="img">
+                <img src="../imagens/placeholder.png" alt="">
+            </div>
+        </section>
+
+        
+        <section id="sec-form">
+            <form action="" id="form">
+                <div class="item-form">
+                    <label for="estados" class="label-form">Selecione um estado:</label>
+                    <select name="Estado" class="form-selecao" id="input-estado">
+                        <option value="">Selecione...</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="item-form">
+                    <label for="Cidade" class="label-form">Escolha sua Cidade: </label><br>
+                    <input type="text" name="Cidade" id="input-cidade" placeholder="Sua Cidade" class="input-form" required><br>
+                </div>
+            </form>
+        </section>
+
+        <section id="div-botao">
+            <button id="botao" onclick="passarPagina()">Em frente!</button>
+        </section>
+    </main>
+</body>
+</html>
+<script src="../js/cadastro.js"></script>
+</html>
