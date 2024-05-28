@@ -146,7 +146,7 @@ main {
     font-size: 2rem;
 }
 
-#outros {
+#header {
     display: flex;
     margin: 15px;
     justify-content: space-between;

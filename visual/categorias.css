@@ -1,16 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+p {
+    display: none;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-
-.flex {
+/* Criando a main, fazendo seus elementos serem grid */
+#main {
+    display: grid;
+    height: 90vh;
+    grid-row: auto auto auto;
+    grid-template-columns: 100vw; 
+    background-color: #1b1b1b;
+}
+/* Layout padrão das seções da grid */
+.layout-secoes {
     display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+/* fonte padrão dos titulos por seção */
+.font {
+    font-family: "Outfit", sans-serif;
+    font-size: 180%;
+    font-weight: 600;
+    color: white;
 }
 
-.block {
-    display: block;
-    
+#sec-fundamentalI {
+    background-color: rgba(32, 178, 171, 0.600);
+}
+
+#sec-fundamentalII {
+    background-color: rgba(255, 105, 180, 0.795);
+}
+
+#sec-EM {
+    background-color: rgba(218, 165, 32, 0.849);
+}
+
+#interrogacao {
+    position: absolute;
+    top: 1.5%;
+    right: 3%;
+    font-size: 25px;
+    color: #fafafa;
+    font-weight: 600;
+    font-family: "Roboto Serif";
+}
+
+.centro {
+    justify-content: center;
+    align-items: center;
 }
 
 .centro-linha {
@@ -21,55 +67,13 @@
     align-items: center;
 }
 
-.center {
-    justify-content: center;
-    align-items: center;
-}
-
-.font {
-    font-family: "Outfit", sans-serif;
-    font-size: 180%;
-    font-weight: 600;
-    color: white;
-}
-
-#main {
-    display: grid;
-    height: 90vh;
-    grid-row: auto auto auto;
-    grid-template-columns: 100vw; 
-}
-
-#sec-fundamentalI {
-    background-color: lightseagreen;
-}
-
-#sec-fundamentalII {
-    background-color: hotpink;
-}
-
-#sec-EM {
-    background-color: goldenrod;
-}
-
-.layout-secoes {
+.flex {
     display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    filter: brightness(80%);
 }
 
-#sec-fundamentalI:hover {
-    filter: brightness(100%);
-}
-
-#sec-fundamentalII:hover {
-    filter: brightness(100%);
-}
-
-#sec-EM:hover {
-    filter: brightness(100%);
+.block {
+    display: block;
+    
 }
 
 #margin {

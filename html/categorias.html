@@ -14,16 +14,19 @@
 </head>
 <body>
     <!--Criação da main e seus elementos, tag semântica-->
-    <main id="main" class="center">
+    <main id="main" class="centro">
+        <p id="interrogacao">?</p>
         <!--Criação seção "Ensino Fundamental I"-->
-        <section id="sec-fundamentalI" class="layout-secoes">
-            <div class="flex block">
-                <p class="flex centro-linha font p1">
+        <section id="sec-fundamentalI" class="layout-secoes" onclick="mostrarInformacoes()">
+            <div class="flex block" id="div-fundamentalI">
+                <p class="flex centro-linha font" id="p-alterado">
                     Ensino
                 </p>
-                <p class="font flex centro-linha">
+                <p class="font flex centro-linha p-alterado">
                     Fundamental I
                 </p>
+                <p>asdoijasdoija</p>
+                <p>asdçasdçasdj</p>
             </div>
         </section>
         <!--Criação seção "Ensino Fundamental II"-->
@@ -43,7 +46,7 @@
                 <p class="block">
                     Ensino 
                 </p>
-                <p class="block">
+                <p class="block" id="margin">
                     Médio
                 </p>
             </div>
