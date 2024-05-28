@@ -55,6 +55,7 @@ function checarTelaDois() {
         ];
 
     let estado = document.getElementById("input-estado").value;
+    estado = estado.options[estado.selectedIndex].value;
     let cidade = document.getElementById("input-cidade").value;
 
     return estadosDoBrasil.includes(estado) && cidade != "";
