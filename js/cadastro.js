@@ -24,41 +24,11 @@ function checarTelaUm(){  //funcao para identificar valores HTML e garantir que 
 }
 
 function checarTelaDois() {
-    const estadosDoBrasil = [
-        "Acre",
-        "Alagoas",
-        "Amapá",
-        "Amazonas",
-        "Bahia",
-        "Ceará",
-        "Distrito Federal",
-        "Espirito Santo",
-        "Goiás",
-        "Maranhão",
-        "Mato Grosso do Sul",
-        "Mato Grosso",
-        "Minas Gerais",
-        "Pará",
-        "Paraíba",
-        "Paraná",
-        "Pernambuco",
-        "Piauí",
-        "Rio de Janeiro",
-        "Rio Grande do Norte",
-        "Rio Grande do Sul",
-        "Rondônia",
-        "Roraima",
-        "Santa Catarina",
-        "São Paulo",
-        "Sergipe",
-        "Tocantins",
-        ];
-
-    let estado = document.getElementById("input-estado").value;
+    let estado = document.getElementById("input-estado");
     estado = estado.options[estado.selectedIndex].value;
     let cidade = document.getElementById("input-cidade").value;
 
-    return estadosDoBrasil.includes(estado) && cidade != "";
+    return estado != "" && cidade != "";
 }
 
 function checarPermissoes() { // função para identificar tela para armazenar dados
