@@ -276,3 +276,9 @@ label {
     background-color: #1561a8;
     color: #d3c3c3;
 }
+
+#sec-final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

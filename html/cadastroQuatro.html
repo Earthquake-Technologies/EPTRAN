@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <script src="../js/cadastro.js"></script>
+    <script src="../js/login.js"></script>
     <link rel="stylesheet" href="../visual/cadastro.css">
 </head>
 <body>
@@ -21,16 +21,17 @@
 
             <div id="interrogacao">
                 <p>?</p>
-                <div id="informacao-interrogacao"> 
+                <div id="informacao-interrogacao">
                     <div id="info-fonte">Info.</div>
                 </div>
-            </div> 
+            </div>
+
         </section>
 
 
         <section id="intro">
             <div id="img">
-                <img src="../imagens/placeholder.png" alt="">
+                <img src="../imagens/Logotipo_Prefeitura_horizontal_positivo.png" alt="">
             </div>
         </section>
 
@@ -38,24 +39,12 @@
         <section id="sec-form">
             <form action="" id="form">
                 <div class="item-form">
-                    <label for="Identificador" class="label-form">Escola: </label><br>
-                    <input type="text" name="Identificador" id="input-escola" placeholder="Nome Completo" class="input-form" required><br>
+                    <label for="email" class="label-form">Email: </label><br>
+                    <input type="text" name="email" id="input-email" placeholder="fulano@exemplo.com" class="input-form" required><br>
                 </div>
                 <div class="item-form">
-                    <select name="Escolaridade" class="form-selecao">
-                        <option value="primeiroF" class="valores-sec">1º Ano Fundamental</option>
-                        <option value="segundoF" class="valores-sec">2º Ano Fundamental</option>
-                        <option value="terceioF" class="valores-sec">3º Ano Fundamental</option>
-                        <option value="quartoF" class="valores-sec">4º Ano Fundamental</option>
-                        <option value="quintoF" class="valores-sec">5º Ano Fundamental</option>
-                        <option value="sextoF" class="valores-sec">6º Ano Fundamental</option>
-                        <option value="setimoF" class="valores-sec">7º Ano Fundamental</option>
-                        <option value="oitavoF" class="valores-sec">8º Ano Fundamental</option>
-                        <option value="nonoF" class="valores-sec">9º Ano Fundamental</option>
-                        <option value="primeiroEM" class="valores-sec">1º Ano Ensino Médio</option>
-                        <option value="segundoEM" class="valores-sec">2º Ano Ensino Médio</option>
-                        <option value="terceiroEM" class="valores-sec">3º Ano Ensino Médio</option>
-                    </select>
+                    <label for="telefone" class="label-form">Telefone: </label><br>
+                    <input type="text" name="telefone" id="input-telefone" placeholder="(00) 9 9876-5432" class="input-form" required>
                 </div>
             </form>
         </section>
