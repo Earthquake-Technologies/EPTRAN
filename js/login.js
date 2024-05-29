@@ -19,11 +19,13 @@ function entrar() {
     for (let i = 0; i < users.length; i++) {
         if (nomeUsuario === users[i].nome) {
             usuarioValido = true;
-            if (senhaUsuario === users[i].senha) {
-                senhaValida = true;
-                // Redireciona para a página de menu se o usuário e senha estiverem corretos
-                return window.location.href = 'menu.html';
-            }
+        }
+        if (senhaUsuario === users[i].senha) {
+            senhaValida = true;
+        }
+        if (nomeUsuario === users[i].nome && senhaUsuario === users[i].senha) {
+            // Redireciona para a página de menu se o usuário e senha estiverem corretos
+            return window.location.href = 'menu.html';
         }
     }
 
