@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <!-- <link rel="stylesheet" href="../visual/generico.css"> -->
     <link rel="stylesheet" href="../visual/menu.css">
 </head>
 <body>
     <header>
         <div id="pesquisar-topo">
-            <img id="prefeitura-horizontal" src="../imagens/Logotipo_Prefeitura_horizontal_positivo.png">
+            <img id="prefeitura-horizontal" src="../imagens/Logotipo_Prefeitura_horizontal_positivo.png"> 
+            <!--Lupa-->
             <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M17 17L21 21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 11C3 15.4183 6.58172 19 11 19C13.213 19 15.2161 18.1015 16.6644 16.6493C18.1077 15.2022 19 13.2053 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <!--Olho-->
+            <svg id="olho-mode" onclick="mais()" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 47 32" fill="black">
+                <path d="M23.6763 0C8.8125 0 0 16 0 16C0 16 8.8125 32 23.6763 32C38.1875 32 47 16 47 16C47 16 38.1875 0 23.6763 0ZM23.5 5.33333C30.0212 5.33333 35.25 10.1333 35.25 16C35.25 21.92 30.0212 26.6667 23.5 26.6667C17.0375 26.6667 11.75 21.92 11.75 16C11.75 10.1333 17.0375 5.33333 23.5 5.33333ZM23.5 10.6667C20.2687 10.6667 17.625 13.0667 17.625 16C17.625 18.9333 20.2687 21.3333 23.5 21.3333C26.7313 21.3333 29.375 18.9333 29.375 16C29.375 15.4667 29.14 14.9867 29.0225 14.5067C28.5525 15.36 27.6125 16 26.4375 16C24.7925 16 23.5 14.8267 23.5 13.3333C23.5 12.2667 24.205 11.4133 25.145 10.9867C24.6163 10.8267 24.0875 10.6667 23.5 10.6667Z" />
+            </svg>
+            <!--Ícone Usuário-->
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.271 18.3457C4.271 18.3457 6.50002 15.5 12 15.5C17.5 15.5 19.7291 18.3457 19.7291 18.3457" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         </div>
     </header>
     <!-- Menu de Opções para diferentes informações -->
@@ -21,32 +27,33 @@
             <span id="bem-vindo-menu">Bem-vindo</span>
             <span id="eptran-span">À Escola Pública de Trânsito</span>
         </div>
-        <section class="caixas-menu">
+        <section class="caixas-menu" onclick="quemSomos()">
             <div class="caixa-menu">
                 <?xml version="1.0" encoding="UTF-8"?><svg width="50px" height="50px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M8 10L16 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 14L8 14" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 14L17 14" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 18V11.4105C3 11.1397 3.05502 10.8716 3.16171 10.6227L5.4805 5.21216C5.79566 4.47679 6.51874 4 7.31879 4H16.6812C17.4813 4 18.2043 4.47679 18.5195 5.21216L20.8383 10.6227C20.945 10.8716 21 11.1397 21 11.4105V18M3 18V20.4C3 20.7314 3.26863 21 3.6 21H6.4C6.73137 21 7 20.7314 7 20.4V18M3 18H7M21 18V20.4C21 20.7314 20.7314 21 20.4 21H17.6C17.2686 21 17 20.7314 17 20.4V18M21 18H17M7 18H17" stroke="#000000" stroke-width="2"></path></svg>
                 <span class="texto-caixa">Quem Somos?</span>
             </div>
-            <div class="caixa-menu">
+            <div class="caixa-menu" onclick="faleConosco()">
                 <?xml version="1.0" encoding="UTF-8"?><svg width="50px" height="50px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 12L17 12" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 8L13 8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 20.2895V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V15C21 16.1046 20.1046 17 19 17H7.96125C7.35368 17 6.77906 17.2762 6.39951 17.7506L4.06852 20.6643C3.71421 21.1072 3 20.8567 3 20.2895Z" stroke="#000000" stroke-width="2"></path></svg>
                 <span class="texto-caixa">Fale Conosco</span>
             </div>
-            <div class="caixa-menu">
+            <div class="caixa-menu" onclick="atividades()">
                 <?xml version="1.0" encoding="UTF-8"?><svg width="50px" height="50px" viewBox="0 0 24 24" stroke-width="2" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M20 12V5.74853C20 5.5894 19.9368 5.43679 19.8243 5.32426L16.6757 2.17574C16.5632 2.06321 16.4106 2 16.2515 2H4.6C4.26863 2 4 2.26863 4 2.6V21.4C4 21.7314 4.26863 22 4.6 22H11" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 10H16M8 6H12M8 14H11" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.3056 17.1133L17.2147 15.1856C17.3314 14.9381 17.6686 14.9381 17.7853 15.1856L18.6944 17.1133L20.7275 17.4243C20.9884 17.4642 21.0923 17.7998 20.9035 17.9923L19.4326 19.4917L19.7797 21.61C19.8243 21.882 19.5515 22.0895 19.3181 21.961L17.5 20.9603L15.6819 21.961C15.4485 22.0895 15.1757 21.882 15.2203 21.61L15.5674 19.4917L14.0965 17.9923C13.9077 17.7998 14.0116 17.4642 14.2725 17.4243L16.3056 17.1133Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 2V5.4C16 5.73137 16.2686 6 16.6 6H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                <span class="texto-caixa">Seus Certificados</span>
+                <span class="texto-caixa">Atividades</span>
             </div>
-            <div class="caixa-menu">
+            <div class="caixa-menu" onclick="avalienos()">
                 <?xml version="1.0" encoding="UTF-8"?><svg width="50px" height="50px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M17.3056 4.11325L18.2147 2.1856C18.3314 1.93813 18.6686 1.93813 18.7853 2.1856L19.6944 4.11325L21.7275 4.42427C21.9884 4.46418 22.0923 4.79977 21.9035 4.99229L20.4326 6.4917L20.7797 8.60999C20.8243 8.88202 20.5515 9.08946 20.3181 8.96099L18.5 7.96031L16.6819 8.96099C16.4485 9.08946 16.1757 8.88202 16.2203 8.60999L16.5674 6.4917L15.0965 4.99229C14.9077 4.79977 15.0116 4.46418 15.2725 4.42427L17.3056 4.11325Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13 2.04938C12.6711 2.01672 12.3375 2 12 2C6.47715 2 2 6.47715 2 12C2 13.8214 2.48697 15.5291 3.33782 17L2.5 21.5L7 20.6622C8.47087 21.513 10.1786 22 12 22C17.5228 22 22 17.5228 22 12C22 11.6625 21.9833 11.3289 21.9506 11" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                 <span class="texto-caixa">Avalie-nos</span>
             </div>
-            <div class="caixa-menu">
+            <div class="caixa-menu" onclick="progresso()">
                 <?xml version="1.0" encoding="UTF-8"?><svg width="50px" height="50px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M20 20H4V4" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 16.5L12 9L15 12L19.5 7.5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                 <span class="texto-caixa">Seu Progresso</span>
             </div>
-            <div class="caixa-menu">
+            <div class="caixa-menu" onclick="sair()">
                 <?xml version="1.0" encoding="UTF-8"?><svg width="50px" height="50px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                 <span class="texto-caixa">Sair da Conta</span>
             </div>
         </section>
     </main>
 </body>
+<script src="../js/menu.js"></script>
 </html>
