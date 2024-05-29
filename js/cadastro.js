@@ -51,7 +51,24 @@ function checarTelaCinco() {
     let senhaConfirmada = document.getElementById("input-senha_confirmada").value;
 
 
+
     return senha != "" && senha == senhaConfirmada;
+}
+
+function checarTelaTres() {
+    let escola = document.getElementById("input-escola").value;
+    let escolaridade = document.getElementById("input-escolaridade");
+    escolaridade = escolaridade.options[escolaridade.selectedIndex].value;
+
+
+    return escola != "" && escolaridade != 120;
+}
+
+
+function checarPermissoes() { // função para identificar tela para armazenar dados
+    if (window.location.href.includes("cadastroUm.html")) { return checarTelaUm() };
+    if (window.location.href.includes("cadastroDois.html")) { return checarTelaDois() };
+    if (window.location.href.includes("cadastroTres.html")) { return checarTelaTres() };
 }
 
 function gerarErro() { console.log("GERANDO ERRO") }
@@ -59,7 +76,7 @@ function gerarErro() { console.log("GERANDO ERRO") }
 function passarPagina() { //função para passar de página 
     window.location.href.includes("cadastroUm.html") && checarTelaUm() ? window.location.href = "cadastroDois.html" : gerarErro();
     window.location.href.includes("cadastroDois.html") && checarTelaDois() ? window.location.href = "cadastroTres.html" : gerarErro();
-
+    window.location.href.includes("cadastroTres.html") && checarPermissoes() ? window.location.href = "cadastroQuatro.html" : gerarErro();
     window.location.href.includes("cadastroQuatro.html") && checarTelaQuatro() ? window.location.href = "cadastroCinco.html" : gerarErro();
     window.location.href.includes("cadastroCinco.html") && checarTelaCinco() ? window.location.href = "cadastroConfirmado.html" : gerarErro();
     window.location.href.includes("cadastroConfirmado.html") ? window.location.href = "login.html" : gerarErro();
