@@ -45,7 +45,7 @@ function entrar() {
 }
 
 
-function mais() {
+function modoEscuro() {
     document.body.classList.toggle('dark-mode');
     const olhoModeElement = document.getElementById('olho-mode');
     const isDarkMode = document.body.classList.contains('dark-mode');
