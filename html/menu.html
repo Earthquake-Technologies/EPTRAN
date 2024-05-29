@@ -10,15 +10,16 @@
 <body>
     <header>
         <div id="pesquisar-topo">
-            <img id="prefeitura-horizontal" src="../imagens/Logotipo_Prefeitura_horizontal_positivo.png"> 
+            <img class="prefeitura-horizontal" id="prefeitura-claro" src="../imagens/Logotipo_Prefeitura_horizontal_positivo.png"> 
+            <img class="prefeitura-horizontal" id="prefeitura-escuro" src="../imagens/Logotipo_Prefeitura_horizontal_negativo.png">
             <!--Lupa-->
-            <?xml version="1.0" encoding="UTF-8"?><svg id="lupa" width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M17 17L21 21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 11C3 15.4183 6.58172 19 11 19C13.213 19 15.2161 18.1015 16.6644 16.6493C18.1077 15.2022 19 13.2053 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <?xml version="1.0" encoding="UTF-8"?><svg id="lupa" width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M17 17L21 21" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 11C3 15.4183 6.58172 19 11 19C13.213 19 15.2161 18.1015 16.6644 16.6493C18.1077 15.2022 19 13.2053 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             <!--Olho-->
             <svg id="olho-mode" onclick="telaEscura()" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 47 32" fill="black">
                 <path d="M23.6763 0C8.8125 0 0 16 0 16C0 16 8.8125 32 23.6763 32C38.1875 32 47 16 47 16C47 16 38.1875 0 23.6763 0ZM23.5 5.33333C30.0212 5.33333 35.25 10.1333 35.25 16C35.25 21.92 30.0212 26.6667 23.5 26.6667C17.0375 26.6667 11.75 21.92 11.75 16C11.75 10.1333 17.0375 5.33333 23.5 5.33333ZM23.5 10.6667C20.2687 10.6667 17.625 13.0667 17.625 16C17.625 18.9333 20.2687 21.3333 23.5 21.3333C26.7313 21.3333 29.375 18.9333 29.375 16C29.375 15.4667 29.14 14.9867 29.0225 14.5067C28.5525 15.36 27.6125 16 26.4375 16C24.7925 16 23.5 14.8267 23.5 13.3333C23.5 12.2667 24.205 11.4133 25.145 10.9867C24.6163 10.8267 24.0875 10.6667 23.5 10.6667Z" />
             </svg>
             <!--Ícone Usuário-->
-            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.271 18.3457C4.271 18.3457 6.50002 15.5 12 15.5C17.5 15.5 19.7291 18.3457 19.7291 18.3457" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <?xml version="1.0" encoding="UTF-8"?><svg id="svg-usuario" onclick="" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.271 18.3457C4.271 18.3457 6.50002 15.5 12 15.5C17.5 15.5 19.7291 18.3457 19.7291 18.3457" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         </div>
     </header>
     <!-- Menu de Opções para diferentes informações -->
@@ -48,9 +49,9 @@
                 <?xml version="1.0" encoding="UTF-8"?><svg width="50px" height="50px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M20 20H4V4" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 16.5L12 9L15 12L19.5 7.5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                 <span class="texto-caixa">Seu Progresso</span>
             </div>
-            <div class="caixa-menu" onclick="sair()">
+            <div class="caixa-menu" id="sair" onclick="sair()">
                 <?xml version="1.0" encoding="UTF-8"?><svg width="50px" height="50px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                <span class="texto-caixa">Sair da Conta</span>
+                <span class="texto-caixa" id="sair-texto">Sair da Conta</span>
             </div>
         </section>
     </main>
