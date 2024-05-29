@@ -12,9 +12,19 @@ function sair(){
 
 
 function telaEscura(){
-    document.body.classList.toggle('dark-mode');
-    const olhoModeElement = document.getElementById('olho-mode');
-    const isDarkMode = document.body.classList.contains('dark-mode');
+    const telaJaEscura = document.body.classList.contains('dark-mode');
 
-    olhoModeElement.style.fill = isDarkMode ? '#fff' : 'black';
+    if(telaJaEscura) {
+        document.getElementById('prefeitura-claro').style.display="block";
+        document.getElementById('prefeitura-escuro').style.display="none";
+
+    } else {
+        document.getElementById('prefeitura-claro').style.display="none";
+        document.getElementById('prefeitura-escuro').style.display="block";
+    }
+    document.body.classList.toggle('dark-mode');
+
+    document.getElementById('olho-mode').style.fill = !telaJaEscura ? '#fff' : 'black';
+    document.getElementById('lupa').style.stroke = !telaJaEscura ? '#fff' : 'black';
+    document.getElementById('svg-usuario').style.stroke = !telaJaEscura ? '#fff' : 'black';
 }

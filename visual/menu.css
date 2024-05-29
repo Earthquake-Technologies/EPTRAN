@@ -52,8 +52,13 @@ body.dark-mode .caixa-menu{
     flex-shrink: 0; 
 }
 
+#svg-usuario {
+    stroke: #000000;
+}
+
 #lupa {
     margin-left: auto;
+    stroke: #000000;
 }
 
 #olho-mode {
@@ -61,10 +66,14 @@ body.dark-mode .caixa-menu{
     margin-right: 10px;
 }
 
-#prefeitura-horizontal {
+.prefeitura-horizontal {
     width: 150px;
     height: 55px;
     flex-shrink: 0; 
+}
+
+#prefeitura-escuro {
+    display: none;
 }
 
 #titulo-menu {
