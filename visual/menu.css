@@ -13,6 +13,27 @@ header {
     box-shadow: 0px 0px 7px 0px rgba(180, 178, 178, 0.712);
 }
 
+
+body.dark-mode{
+    background-color: #121212;
+}
+
+body.dark-mode .caixa-menu{
+    background-color: #f2f2f2;
+    display: flex;
+    width: 170px;
+    height: 170px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    flex-shrink: 0;  
+    box-shadow: 0px 1px 5px 0px #f2f2f2;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
 #central {
     display: flex;
     margin: 0% 1% 0% 1%; 
