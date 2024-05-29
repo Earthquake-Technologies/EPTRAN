@@ -30,7 +30,7 @@
 
         <section id="intro">
             <div id="img">
-                <img src="../imagens/placeholder.png" alt="">
+                <img src="../imagens/Logotipo_Prefeitura_horizontal_positivo.png" alt="">
             </div>
             <div>
                 <h1 id="bem-vindo">Login</h1>
@@ -42,11 +42,13 @@
             <form action="" id="form">
                 <div class="item-form">
                     <label for="Identificador" class="label-form">Nome ou Email: </label><br>
-                    <input type="text" name="Identificador" id="input-nome" placeholder="Nome de Usuário ou Email@gmail" class="input-form"><br>
+                    <span class="invalido" id="span-invalido-nome"></span>
+                    <input type="text" name="Identificador" id="input-nome" placeholder="Nome de Usuário ou Email@gmail" class="input-form" required><br>
                 </div>
                 <div class="item-form">
                     <label for="senha" class="label-form">Senha: </label><br>
-                    <input type="password" name="senha" id="input-senha" placeholder="Senha" class="input-form">
+                    <span class="invalido" id="span-invalido-senha"></span>
+                    <input type="password" name="senha" id="input-senha" placeholder="Senha" class="input-form" required>
                 </div>
             </form>
         </section>
