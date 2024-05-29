@@ -27,9 +27,17 @@ header {
     padding: 15px 15px 15px 15px;
     height: fit-content;
     width: 100%;
-    justify-content: space-between;
     align-items: center;
     flex-shrink: 0; 
+}
+
+#lupa {
+    margin-left: auto;
+}
+
+#olho-mode {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #prefeitura-horizontal {
