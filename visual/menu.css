@@ -15,7 +15,7 @@ header {
 
 
 body.dark-mode{
-    background-color: #121212;
+    background-color: #202020;
 }
 
 body.dark-mode .caixa-menu{
@@ -29,6 +29,30 @@ body.dark-mode .caixa-menu{
     gap: 26px;
     flex-shrink: 0;  
     box-shadow: 0px 1px 5px 0px #f2f2f2;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.25s;
+}
+
+body.dark-mode #bem-vindo-menu{
+    color: #fafafa;
+}
+
+body.dark-mode #eptran-span{
+    color: #f2d06bda;
+}
+
+body.dark-mode .caixa-menu:hover{
+    background-color: #f2d06bda;
+    display: flex;
+    width: 170px;
+    height: 170px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    flex-shrink: 0;  
+    box-shadow: 0px 1px 5px 0px #f2d06bda;
     cursor: pointer;
     border-radius: 3px;
 }
@@ -54,11 +78,13 @@ body.dark-mode .caixa-menu{
 
 #lupa {
     margin-left: auto;
+    cursor: pointer;
 }
 
 #olho-mode {
     margin-left: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #prefeitura-horizontal {
