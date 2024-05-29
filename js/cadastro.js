@@ -44,6 +44,7 @@ function checarTelaTres() {
 function checarPermissoes() { // função para identificar tela para armazenar dados
     if (window.location.href.includes("cadastroUm.html")) { return checarTelaUm() };
     if (window.location.href.includes("cadastroDois.html")) { return checarTelaDois() };
+    if (window.location.href.includes("cadastroTres.html")) { return checarTelaTres() };
 }
 
 function gerarErro() { console.log("GERANDO ERRO") }
@@ -51,4 +52,5 @@ function gerarErro() { console.log("GERANDO ERRO") }
 function passarPagina() { //função para passar de página 
     window.location.href.includes("cadastroUm.html") && checarPermissoes() ? window.location.href = "cadastroDois.html" : gerarErro();
     window.location.href.includes("cadastroDois.html") && checarPermissoes() ? window.location.href = "cadastroTres.html" : gerarErro();
+    window.location.href.includes("cadastroTres.html") && checarPermissoes() ? window.location.href = "cadastroQuatro.html" : gerarErro();
 }
