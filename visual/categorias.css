@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
-p {
-    display: none;
-}
-
 * {
     margin: 0px;
     padding: 0px;
@@ -32,8 +28,36 @@ p {
     color: white;
 }
 
+.forma-info {
+    font-size: 135%;
+    color: whitesmoke;
+    font-family: "Ropa Sans", sans-serif;
+}
+
+.ajuste-info {
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.botao {
+    width: 30vw;
+    height: 8vh;
+    border-radius: 8px;
+    border-color: #FFBB54;
+    font-weight: 600;
+    font-family: "Roboto Serif", serif;
+    background-color: rgba(245, 245, 245, 0.54);
+    margin-top: 5vh;
+
+}
+
+.botao:hover {
+    background-color: rgba(245, 245, 245, 0.44);
+    transition: 0.2s;
+}
+
 #sec-fundamentalI {
-    background-color: rgba(32, 178, 171, 0.600);
+    background-color: rgb(24, 131, 125);
 }
 
 #sec-fundamentalII {
@@ -52,6 +76,10 @@ p {
     color: #fafafa;
     font-weight: 600;
     font-family: "Roboto Serif";
+}
+
+.none {
+    display: none;
 }
 
 .centro {
