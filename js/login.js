@@ -10,17 +10,36 @@ var users = [
 function entrar() {
     const nomeUsuario = document.getElementById('input-nome').value;
     const senhaUsuario = document.getElementById('input-senha').value;
+    const spanInvalidacaoNome = document.getElementById('span-invalido-nome');
+    const spanInvalidacaoSenha = document.getElementById('span-invalido-senha');
+
+    let usuarioValido = false;
+    let senhaValida = false;
 
     for (let i = 0; i < users.length; i++) {
-        if (nomeUsuario === users[i].nome && senhaUsuario === users[i].senha) {
-            // Redireciona para a página de menu se o usuário e senha estiverem corretos
-            return window.location.href = 'menu.html';
+        if (nomeUsuario === users[i].nome) {
+            usuarioValido = true;
+            if (senhaUsuario === users[i].senha) {
+                senhaValida = true;
+                // Redireciona para a página de menu se o usuário e senha estiverem corretos
+                return window.location.href = 'menu.html';
+            }
         }
     }
-    
-    // Se não houver correspondência de usuário e senha, pode exibir uma mensagem de erro ou apenas retornar sem fazer nada
-    // irei subtituir este alert
-    alert("Usuário ou senha incorretos.");
+
+    // Invalidação de dados 
+    // span para mostrar os dados invalidos 
+    if (!usuarioValido) {
+        spanInvalidacaoNome.textContent = '*Nome de Úsuario Inválido!';
+    } else {
+        spanInvalidacaoNome.textContent = '';
+    }
+
+    if (!senhaValida) {
+        spanInvalidacaoSenha.textContent = '*Senha de Úsuario Inválida!';
+    } else {
+        spanInvalidacaoSenha.textContent = '';
+    }
 }
 
 
