@@ -31,6 +31,16 @@ function checarTelaDois() {
     return estado != "" && cidade != "";
 }
 
+function checarTelaTres() {
+    let escola = document.getElementById("input-escola").value;
+    let escolaridade = document.getElementById("input-escolaridade");
+    escolaridade = escolaridade.options[escolaridade.selectedIndex].value;
+
+
+    return escola != "" && escolaridade != 120;
+}
+
+
 function checarPermissoes() { // função para identificar tela para armazenar dados
     if (window.location.href.includes("cadastroUm.html")) { return checarTelaUm() };
     if (window.location.href.includes("cadastroDois.html")) { return checarTelaDois() };
