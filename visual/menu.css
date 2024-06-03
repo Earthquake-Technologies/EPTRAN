@@ -176,6 +176,10 @@ body.dark-mode #sair:hover{
     color: #000; 
 }
 
+#svg-usuario{
+    cursor: pointer;
+}
+
 @media(max-width: 370px) {
     .caixa-menu {
         width: 155px;
