@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-p {
-    display: none;
 }
 
 /* Criando a main, fazendo seus elementos serem grid */
@@ -31,20 +28,25 @@ p {
     font-weight: 600;
     color: white;
 }
-
+/* Transformando a tag p para o padrão da seção de informações */
 .forma-info {
     font-size: 135%;
     color: whitesmoke;
     font-family: "Ropa Sans", sans-serif;
 }
-
+/* Ajus tando a tag p para receber os sublinhados */
 .ajuste-info {
+    font-size: 135%;
+    font-family: "Ropa Sans", sans-serif;
+    color: whitesmoke;
     text-decoration: underline;
     margin-left: 5px;
 }
-
+/* Layout padrão do botão da seção de informações */
 .botao {
-    width: 30vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: fit-content;
     height: 8vh;
     border-radius: 8px;
     border-color: #FFBB54;
@@ -52,7 +54,6 @@ p {
     font-family: "Roboto Serif", serif;
     background-color: rgba(245, 245, 245, 0.54);
     margin-top: 5vh;
-
 }
 
 .botao:hover {
@@ -73,13 +74,17 @@ p {
 }
 
 #interrogacao {
-    position: absolute;
     top: 1.5%;
-    right: 3%;
-    font-size: 25px;
+    right: 2%;
+    font-size: 130%;
     color: #fafafa;
     font-weight: 600;
     font-family: "Roboto Serif";
+    position: absolute;
+    width: 8vw;
+    height: 4.5vh;
+    border-radius: 50%;
+    background-color: #1b1b1b;
 }
 
 .none {
@@ -109,7 +114,7 @@ p {
 }
 
 #margin {
-    margin-left: 1vw;
+    margin-top: 0.5vw;
 }
 
 /* Parte do Footer */
