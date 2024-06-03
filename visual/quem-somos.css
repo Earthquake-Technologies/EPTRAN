@@ -4,18 +4,40 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Ropa Sans", sans-serif;
 }
 
 .conteudo {
     width: 100%;
 }
 
+.img-prefeitura {
+    width: 100vw;
+}
+
 .titulo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(18, 43, 156);
-    color: white;
-    font-size: 4rem;
+    width: 100%;
+    z-index: 5;
 }
 
+.titulo > h1 {
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 65%;
+    background-color: rgb(0, 64, 126);
+    color: white;
+    margin: -30px 0px 0px 0px;
+}
+
+.video {
+    margin: 50px 0px 0px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.video > video {
+    width: 90%;
+}
