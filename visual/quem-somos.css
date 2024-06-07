@@ -1,43 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 /* Configuração para zerar a página */
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Ropa Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Ropa Sans", sans-serif;
 }
 
 .conteudo {
-    width: 100%;
+  width: 100%;
 }
 
 .img-prefeitura {
-    width: 100vw;
+  width: 100vw;
 }
 
 .titulo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    z-index: 5;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 5;
 }
 
 .titulo > h1 {
-    padding: 20px;
-    font-size: 1.5rem;
-    text-align: center;
-    width: 65%;
-    background-color: rgb(0, 64, 126);
-    color: white;
-    margin: -30px 0px 0px 0px;
+  padding: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 65%;
+  background-color: rgb(0, 64, 126);
+  color: white;
+  margin: -30px 0px 0px 0px;
+}
+
+.conteudo-texto {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 30px;
+  margin: 50px 10px 30px 10px;
+}
+
+.texto {
+  font-size: 1rem;
 }
 
 .video {
-    margin: 50px 0px 0px 0px;
-    width: 100%;
-    text-align: center;
+  margin: 50px 0px 0px 0px;
+  width: 100%;
+  text-align: center;
 }
 
 .video > video {
-    width: 90%;
+  width: 90%;
 }
