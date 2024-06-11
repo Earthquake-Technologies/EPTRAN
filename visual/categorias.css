@@ -34,7 +34,63 @@
     color: whitesmoke;
     font-family: "Ropa Sans", sans-serif;
 }
-/* Ajus tando a tag p para receber os sublinhados */
+
+
+
+
+
+
+
+
+
+
+.forma-info-interrogacao {
+    font-size: 135%;
+    color: whitesmoke;
+    font-family: "Ropa Sans", sans-serif;
+}
+
+.ajuste-info-interrogacao {
+    font-size: 135%;
+    color: whitesmoke;
+    font-family: "Ropa Sans", sans-serif;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.botao-info {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: fit-content;
+    height: 8vh;
+    border-radius: 8px;
+    border-color: #FFBB54;
+    font-weight: 600;
+    font-family: "Roboto Serif", serif;
+    background-color: rgba(245, 245, 245, 0.54);
+    margin-top: 2vh;
+}
+
+.botao-info:hover {
+    background-color: rgba(245, 245, 245, 0.44);
+    transition: 0.2s;
+}
+
+.margem-ajuste {
+    margin-bottom: 2vh;
+}
+
+.divP-info-interrogacao {
+    height: 10.845vh;
+}
+
+
+
+
+
+
+
+/* Ajustando a tag p para receber os sublinhados */
 .ajuste-info {
     font-size: 135%;
     font-family: "Ropa Sans", sans-serif;
@@ -63,14 +119,17 @@
 
 #sec-fundamentalI {
     background-color: rgb(24, 131, 125);
-}
+    align-items: center;
+} 
 
 #sec-fundamentalII {
     background-color: rgba(255, 105, 180, 0.795);
+    align-items: center;
 }
 
 #sec-EM {
     background-color: rgba(218, 165, 32, 0.849);
+    align-items: center;
 }
 
 #interrogacao {
@@ -85,6 +144,7 @@
     height: 4.5vh;
     border-radius: 50%;
     background-color: #1b1b1b;
+    display: flex;
 }
 
 .none {
@@ -113,8 +173,19 @@
     
 }
 
-#margin {
-    margin-top: 0.5vw;
+/* Animação do botão de informações */
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(5px);
+    }
+}
+
+#interrogacao {
+    animation: float 2.5s ease-in-out infinite;
 }
 
 /* Parte do Footer */
