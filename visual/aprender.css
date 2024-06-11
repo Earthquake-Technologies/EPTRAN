@@ -1,129 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 /* Configuração para zerar a página */
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Roboto Serif";
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto Serif";
 }
 
 #aprender-header {
-    display: flex;
-    margin-top: 10%;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  margin-top: 10%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 #aprender-titulo {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 #aprender-azul {
-    color: #2985DA;
+  color: #2985da;
 }
 
 #barra-de-pesquisa {
-    display: flex;
-    padding-right: 10px;
-    padding-left: 10px;
-    height: 38px;
-    width: 302px;
-    flex-direction: row-reverse;
-    align-items: center;
-    background: #D9D9D9;
-    border-radius: 5px 0px 0px 5px;
-    border: none;
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 38px;
+  width: 302px;
+  flex-direction: row-reverse;
+  align-items: center;
+  background: #e0dfdf;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  border: 2px solid #044974;
 }
 
 #container-barra-de-pesquisa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #container-lupa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 38px;
-    background: #D9D9D9;
-    border-radius: 0px 5px 5px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 38px;
+  background: #d9d9d9;
+  border-radius: 0px 5px 5px 0px;
+}
+
+#container-lupa:hover {
+  background: #b3b2b2;
+  transition: 0.1s;
 }
 
 #lupa-barra-de-pesquisa {
-color: black;
+  color: black;
 }
 
-.topo{
-    margin-top: 50px;
+.topo {
+  margin-top: 50px;
 }
 
 .circulo {
-    display: flex;
-    height: 100px;
-    width: 100px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50%;
-    behavior: url(PIE.htc); 
+  display: flex;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  behavior: url(PIE.htc); /* Vira circulo no internet explorer*/
 }
 
-.flex{
-    display:flex;
+.flex {
+  display: flex;
 }
 
-.linha{
-    display: flex;
-    justify-content: space-evenly;
+.linha {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.verde{
-    background-color: #77B653;
+.verde {
+  background-color: #77b653;
 }
 
-.amarelo{
-    background-color: #F2D06B;
+.verde:hover {
+  background-color: #5e963e;
+  transition: 0.1s;
 }
 
-.vermelho{
-    background-color: #F3404F;
+.amarelo {
+  background-color: #f2d06b;
 }
 
-.azul-escuro{
-    background-color: #125177;
-    color: #fafafa;
+.amarelo:hover {
+  background-color: #d3af44;
+  transition: 0.1s;
 }
 
-.center{
-    display: flex;
-    justify-content: center;
+.vermelho {
+  background-color: #f3404f;
 }
 
-h1{
-    font-size: 25px;
+.vermelho:hover {
+  background-color: #c41a28;
+  transition: 0.1s;
 }
 
-#azul-claro-texto{
-   color: #2985DA;
+.azul-escuro {
+  background-color: #148ad3;
+  color: #fafafa;
 }
 
-#verde-texto{
-    color: #77B653;
+.azul-escuro:hover {
+  background-color: #0f6499;
+  transition: 0.1s;
 }
 
-#vermelho-texto{
-    color: #F3404F;
+.center {
+  display: flex;
+  justify-content: center;
 }
 
-#intro{
-    gap: 10px;
+h1 {
+  font-size: 25px;
 }
 
-div{
-    text-align: center;
+#azul-claro-texto {
+  color: #2985da;
+}
+
+#verde-texto {
+  color: #77b653;
+}
+
+#vermelho-texto {
+  color: #f3404f;
+}
+
+#intro {
+  gap: 10px;
+}
+
+div {
+  text-align: center;
+}
+/* cor do Input */
+input::placeholder {
+  color: black; /* Cor do texto do placeholder */
+}
+
+/* Para navegadores antigos que suportam pseudo-elementos específicos */
+input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: black;
+}
+
+input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
+}
+
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: black;
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+  opacity: 1; /* Para o Firefox, a opacidade padrão do placeholder é diferente, então isso garante que fique preto */
+}
+
+/* footer */
+footer {
+  height: 50px;
 }
