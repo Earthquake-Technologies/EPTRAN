@@ -35,7 +35,7 @@ main {
 }
 
 .item:hover {
-    background: #9b65f1;
+    background: #033b9c;
     transition: 0.4s;
 }
 
@@ -43,7 +43,7 @@ main {
     display: flex;
     height: 10vh;
     justify-content: center;
-    background: #AB77FF;;
+    background: #023385;;
 }
 
 .nav-list {
@@ -63,9 +63,4 @@ main {
     font-weight: 600;
     font-size: 0.8rem;
     color: #ffffff;
-}
-
-.item:hover {
-    background: #9b65f1;
-    transition: 0.4s;
 }

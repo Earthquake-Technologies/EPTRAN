@@ -1,3 +1,5 @@
+var click = false;
+
 // Função que mostra as informações do "Ensino Fundamental I"
 function mostrarEFI() {
     let p0 = document.getElementById("p0-alterado-EFI");
@@ -46,6 +48,8 @@ function mostrarEFII() {
 }
 // Função que mostra as informações do "Ensino Médio"
 function mostrarEM() {
+    click = !click;
+    
     let p4 = document.getElementById("p4-alterado-EM");
     p4.style.display = "none";
     let p5 = document.getElementById("p5-alterado-EM");
@@ -68,8 +72,6 @@ function mostrarEM() {
     infoFundamental1.style.display = "none"; 
 }
 
-var click = false;
-
 function infoTotal() {
     click = !click;
     if (click === true) {
@@ -85,6 +87,12 @@ function infoTotal() {
         p4.style.display = "none";
         let p5 = document.getElementById("p5-alterado-EM");
         p5.style.display = "none";
+        let infoFundamental1 = document.getElementById("info-efi");
+        infoFundamental1.style.display = "none"; 
+        let infoFundamental2 = document.getElementById("info-efii");
+        infoFundamental2.style.display = "none";
+        let infoMedio = document.getElementById("info-em");
+        infoMedio.style.display = "none";
         let infoInterrogacaoEFI = document.getElementById("info-interrogacao-EFI");
         infoInterrogacaoEFI.style.display = "block";
         let infoInterrogacaoEFII = document.getElementById("info-interrogacao-EFII");
