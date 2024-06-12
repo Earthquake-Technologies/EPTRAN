@@ -1,226 +1,227 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 /* Criando a main, fazendo seus elementos serem grid */
 #main {
-    display: grid;
-    height: 90vh;
-    grid-row: auto auto auto;
-    grid-template-columns: 100vw; 
-    background-color: #1b1b1b;
+  display: grid;
+  height: 90vh;
+  grid-row: auto auto auto;
+  grid-template-columns: 100vw;
+  background-color: #1b1b1b;
 }
 /* Layout padrão das seções da grid */
 .layout-secoes {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 /* fonte padrão dos titulos por seção */
 .font {
-    font-family: "Outfit", sans-serif;
-    font-size: 180%;
-    font-weight: 600;
-    color: white;
+  font-family: "Outfit", sans-serif;
+  font-size: 180%;
+  font-weight: 600;
+  color: white;
 }
 /* Transformando a tag p para o padrão da seção de informações */
 .forma-info {
-    font-size: 135%;
-    color: whitesmoke;
-    font-family: "Ropa Sans", sans-serif;
+  font-size: 135%;
+  color: whitesmoke;
+  font-family: "Ropa Sans", sans-serif;
 }
 
 .forma-info-interrogacao {
-    font-size: 135%;
-    color: whitesmoke;
-    font-family: "Ropa Sans", sans-serif;
+  font-size: 135%;
+  color: whitesmoke;
+  font-family: "Ropa Sans", sans-serif;
 }
 
 .ajuste-info-interrogacao {
-    font-size: 135%;
-    color: whitesmoke;
-    font-family: "Ropa Sans", sans-serif;
-    margin-left: 5px;
-    text-decoration: underline;
+  font-size: 135%;
+  color: whitesmoke;
+  font-family: "Ropa Sans", sans-serif;
+  margin-left: 5px;
+  text-decoration: underline;
 }
 
 .botao-info {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    width: fit-content;
-    height: 8vh;
-    border-radius: 8px;
-    border-color: #FFBB54;
-    font-weight: 600;
-    font-family: "Roboto Serif", serif;
-    background-color: rgba(245, 245, 245, 0.54);
-    margin-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: fit-content;
+  height: 8vh;
+  border-radius: 8px;
+  border-color: #ffbb54;
+  font-weight: 600;
+  font-family: "Roboto Serif", serif;
+  background-color: rgba(245, 245, 245, 0.54);
+  margin-top: 2vh;
 }
 
 .botao-info:hover {
-    background-color: rgba(245, 245, 245, 0.44);
-    transition: 0.2s;
+  background-color: rgba(245, 245, 245, 0.44);
+  transition: 0.2s;
 }
 
 .margem-ajuste {
-    margin-bottom: 2vh;
+  margin-bottom: 2vh;
 }
 
 .divP-info-interrogacao {
-    height: 10.845vh;
+  height: 10.845vh;
 }
 
 /* Ajustando a tag p para receber os sublinhados */
 .ajuste-info {
-    font-size: 135%;
-    font-family: "Ropa Sans", sans-serif;
-    color: whitesmoke;
-    text-decoration: underline;
-    margin-left: 5px;
+  font-size: 135%;
+  font-family: "Ropa Sans", sans-serif;
+  color: whitesmoke;
+  text-decoration: underline;
+  margin-left: 5px;
 }
 /* Layout padrão do botão da seção de informações */
 .botao {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    width: fit-content;
-    height: 8vh;
-    border-radius: 8px;
-    border-color: #FFBB54;
-    font-weight: 600;
-    font-family: "Roboto Serif", serif;
-    background-color: rgba(245, 245, 245, 0.54);
-    margin-top: 5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: fit-content;
+  height: 8vh;
+  border-radius: 8px;
+  border-color: #ffbb54;
+  font-weight: 600;
+  font-family: "Roboto Serif", serif;
+  background-color: rgba(245, 245, 245, 0.54);
+  margin-top: 5vh;
 }
 
 .botao:hover {
-    background-color: rgba(245, 245, 245, 0.44);
-    transition: 0.2s;
+  background-color: rgba(245, 245, 245, 0.44);
+  transition: 0.2s;
 }
 
 #sec-fundamentalI {
-    background-color: rgb(24, 131, 125);
-    align-items: center;
-} 
+  background-color: rgb(24, 131, 125);
+  align-items: center;
+}
 
 #sec-fundamentalII {
-    background-color: rgba(255, 105, 180, 0.795);
-    align-items: center;
+  background-color: rgba(255, 105, 180, 0.795);
+  align-items: center;
 }
 
 #sec-EM {
-    background-color: rgba(218, 165, 32, 0.849);
-    align-items: center;
+  background-color: rgba(218, 165, 32, 0.849);
+  align-items: center;
 }
 
 #interrogacao {
-    top: 1.5%;
-    right: 2%;
-    font-size: 130%;
-    color: #fafafa;
-    font-weight: 600;
-    font-family: "Roboto Serif";
-    position: absolute;
-    width: 8vw;
-    height: 4.5vh;
-    border-radius: 50%;
-    background-color: #1b1b1b;
-    display: flex;
+  top: 1.5%;
+  right: 2%;
+  font-size: 130%;
+  color: #fafafa;
+  font-weight: 600;
+  font-family: "Roboto Serif";
+  position: absolute;
+  width: 8vw;
+  height: 4.5vh;
+  border-radius: 50%;
+  background-color: #1b1b1b;
+  display: flex;
 }
 
 .none {
-    display: none;
+  display: none;
 }
 
 .centro {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .centro-linha {
-    justify-content: center;
+  justify-content: center;
 }
 
 .centro-coluna {
-    align-items: center;
+  align-items: center;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .block {
-    display: block;
-    
+  display: block;
 }
 
 /* Animação do botão de informações */
 
 @keyframes float {
-    0%, 100%{
-        transform: translateY(0)
-    }
-    50%{
-        transform: translateY(5px);
-    }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
 }
 
 #interrogacao {
-    animation: float 2.5s ease-in-out infinite;
+  animation: float 2.5s ease-in-out infinite;
 }
 
 /* Parte do Footer */
 
 .nav-list {
-    display: flex;
-    margin: 0% 0% 0% 0%;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  margin: 0% 0% 0% 0%;
+  align-items: center;
+  list-style: none;
+  box-shadow: 0px 0px 3px 2px #3838385d;
 }
 
-.item {  
-    display: flex;
-    height: 10vh;
-    width: 25vw;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 600;
-    font-size: 0.8rem;
-    color: #ffffff;
+.item {
+  display: flex;
+  height: 10vh;
+  width: 25vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #ffffff;
 }
 
 .item:hover {
-    background: #033b9c;
-    transition: 0.4s;
+  background: #033b9c;
+  transition: 0.4s;
 }
 
 .footer {
-    display: flex;
-    height: 10vh;
-    justify-content: center;
-    background: #023385;;
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  background: #023385;
 }
 
 .nav-list {
-    display: flex;
-    margin: 0% 0% 0% 0%;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  margin: 0% 0% 0% 0%;
+  align-items: center;
+  list-style: none;
 }
 
-.item {  
-    display: flex;
-    height: 10vh;
-    width: 25vw;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 600;
-    font-size: 0.8rem;
-    color: #ffffff;
+.item {
+  display: flex;
+  height: 10vh;
+  width: 25vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #ffffff;
 }
