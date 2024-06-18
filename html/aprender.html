@@ -4,23 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprender!</title>
-    <script src="../js//aprender.js"></script>
+    <script src="../js/./aprender.js"></script>
     <link rel="stylesheet" href="../visual/aprender.css">
 </head>
 <body>
     <header>
-        <!-- Todas as logos-->
-        <img src="../materiais/Logos.png" alt="Logo da Prefeitura, EPTRAN e DETRANS" id="logo_pref">
     </header>
     <main>
         <!-- Título e Pesquisa -->
-        <div>
+        <div id="pesquisa">
             <h1>Vamos Aprender!</h1>
-            <input type="text" id="pesquisaJogo">
+            <div id="container-barra-de-pesquisa">
+                <input id="barra-de-pesquisa" placeholder="Pesquisar Nome do Jogo..." onkeypress="cliqueComTelclaEnter(event)"></input>
+                <div id="container-lupa" onclick="pesquisarAtt()"><?xml version="1.0" encoding="UTF-8"?><svg width="20px" height="20px" id="lupa-barra-de-pesquisa" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M17 17L21 21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 11C3 15.4183 6.58172 19 11 19C13.213 19 15.2161 18.1015 16.6644 16.6493C18.1077 15.2022 19 13.2053 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+            </div>
         </div>
-
-
-
+        <div class="conteiner">
+            <div class="conteiner_jogo">
+                <div class="decoracao">
+                    <img src="/imagens/placas_grama.png" alt="" class="placa">
+                </div>
+                <div class="jogo">
+                        <!-- Nome do Jogo & outros -->
+                        <h2>Montar Veículos</h2>
+                        <!-- Jogo -->
+                        <div class="visual">
+                        <img src="/imagens/montar_carros.png" alt="" onclick="" class="imagem_jogo"> <!-- Imagem do jogo - onclick leva até o jogo-->
+                        </div>
+                        <!-- Pontuação -->
+                        <div class="info">
+                            <div class="descricao">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                            </div>
+                            <div class="pontuacao_jogo">
+                                <p class="negrito">Pontuação:</p>
+                                <span onload="pegarPontuacao()" id="pontuacao"></span> <!-- mostra a pontuação-->
+                            </div>
+                        </div>
+                        <!-- Começar -->
+                        <button onclick="" class="comecar-bot">Começar</button> <!-- Usa o mesmo JS da imagem do jogo-->
+                </div>
+                <div> <img src="/imagens/placas_grama.png" alt="" class="placa-inv"></div>
+            </div>  
+            <div class="rua">
+                <div class="faixa"></div>
+                <div class="faixa"></div>
+                <div class="faixa"></div>
+                <div class="faixa"></div>
+                <div class="faixa"></div>
+                <div class="faixa"></div>
+            </div>
+            <div class="conteiner_jogo">
+                <div class="decoracao">
+                    <img src="/imagens/placas_grama.png" alt="" class="placa">
+                </div>
+                <div class="jogo">
+                        <!-- Nome do Jogo & outros -->
+                        <h2>Nome do Jogo</h2>
+                        <!-- Jogo -->
+                        <div class="visual">
+                        <img src="/imagens/placeholder.png" alt="" onclick="" class="imagem_jogo"> <!-- Imagem do jogo - onclick leva até o jogo-->
+                        </div>
+                        <!-- Pontuação -->
+                        <div class="info">
+                            <div class="descricao">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                            </div>
+                            <div class="pontuacao_jogo">
+                                <p class="negrito">Pontuação:</p>
+                                <span onload="pegarPontuacao()" id="pontuacao"></span> <!-- mostra a pontuação-->
+                            </div>
+                        </div>
+                        <!-- Começar -->
+                        <button onclick="" class="comecar-bot">Começar</button> <!-- Usa o mesmo JS da imagem do jogo-->
+                </div>
+                <div> <img src="/imagens/placas_grama.png" alt="" class="placa-inv"></div>
+            </div>  
+        </div>
     </main>
 </body>
 </html>

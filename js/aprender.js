@@ -1,3 +1,7 @@
+function pegarPontuacao() {
+  document.getElementById('pontuacao').textContent = "100";
+}
+
 const pesquisarAtt = () => {
   const inputPesquisar = document.getElementById("barra-de-pesquisa");
   const termoPesquisa = inputPesquisar.value;
@@ -6,7 +10,5 @@ const pesquisarAtt = () => {
 };
 
 const cliqueComTelclaEnter = (event) => {
-  if (event.keyCode === 13) {
     pesquisarAtt();
-  }
 };
