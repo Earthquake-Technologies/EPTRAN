@@ -111,6 +111,16 @@ header{
 }
 
 .placa{
+  margin-bottom: -4px;
+  height: 15vw;
+}
+
+.placa-inv{
+  -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  margin-bottom: -4px;
   height: 15vw;
 }
 
