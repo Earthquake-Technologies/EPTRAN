@@ -1,5 +1,4 @@
 var click = false;
-var isOpen = false;
 
 function apareceInfoEFI() {
     let p0 = document.getElementById("p0-alterado-EFI");

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+/* Configuração para zerar a página */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto Serif";
+}
+
+
+header{
+    height: 20vh;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 2vh;
+    margin-bottom: 3vh;
+    text-align: center;    
+    color: #fafafa;
+    background-color:  #044974;
+}
+
+main{
+    padding: 3vh;
+    font-size: 12px;
+}
+
+.espaco{
+    display: block;
+    margin: 10px;
+}
