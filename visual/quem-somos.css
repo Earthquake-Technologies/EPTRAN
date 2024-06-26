@@ -7,12 +7,39 @@
   font-family: "Ropa Sans", sans-serif;
 }
 
+main {
+  margin: 0px 20px;
+}
+
+/* Div do conteudo */
 .conteudo {
   width: 100%;
 }
 
+.conteudo-texto {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 30px;
+  margin: 50px 10px 30px 10px;
+}
+
+/* Img da Prefeitura */
 .img-prefeitura {
   width: 100vw;
+}
+
+/* Texto e Titulos */
+
+.texto {
+  padding: 20px;
+  background-color: #d9d9d9;
+  font-size: 1rem;
+}
+
+.texto > p {
+  word-spacing: 1px;
+  line-height: 1.4;
 }
 
 .titulo {
@@ -32,18 +59,7 @@
   margin: -30px 0px 0px 0px;
 }
 
-.conteudo-texto {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: left;
-  gap: 30px;
-  margin: 50px 10px 30px 10px;
-}
-
-.texto {
-  font-size: 1rem;
-}
-
+/* Vídeo */
 .video {
   margin: 50px 0px 0px 0px;
   width: 100%;
@@ -51,5 +67,81 @@
 }
 
 .video > video {
-  width: 90%;
+  width: 100%;
+}
+
+/* Infos */
+#info-totais {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.titulo-info {
+  margin: 10px 0px 10px 0px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.lista-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  margin: 50px 0px 0px 0px;
+  height: auto;
+  background-color: #555555;
+  color: white;
+}
+
+/* Copy */
+#copy {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+#copy > p {
+  font-size: 0.7rem;
+}
+/* Img logo da prefeitura na horizontal  */
+#img-footer-prefeitura {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+#img-footer-prefeitura > img {
+  width: 100%;
+}
+
+/* redes-socias-footer  */
+#redes-socias-footer {
+  text-align: center;
+}
+
+#lista-rede-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
+}
+
+#texto-rede-social {
+  padding: 5px;
+  background-color: rgba(24, 24, 24, 0.74);
+}
+
+.logo-item > svg {
+  width: 50px;
 }
